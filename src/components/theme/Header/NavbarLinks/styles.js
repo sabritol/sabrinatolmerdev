@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   a {
     color: #000;
     text-decoration: none;
 
-		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-		}
+    @media (max-width: 960px) {
+      color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
+    }
   }
 
   ${({ desktop }) =>
@@ -20,12 +20,15 @@ export const Wrapper = styled.div`
 					display: none;
 			}
 
-			a {
+			a {     color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
 					margin-right: 1rem;
 
 					&:last-child {
 							margin-right: unset;
 					}
+					&:hover {
+                   color: #5457a0;
+  }
 			}
 		`
       : `

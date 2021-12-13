@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "Email",
+    "link": "mailto:sabrinatolmer@gmail.com",
+    "icon": "/icons/email.svg"
+  },
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/sabritol",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 2,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/sabrina-tolmer-819426126/",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 3,
+    "name": "Twitter",
+    "link": "https://twitter.com/iamwayra",
+    "icon": "/icons/twitter.svg"
+  },
+  {
+    "id": 4,
+    "name": "Instagram",
+    "link": "https://www.instagram.com/iamwayra/?hl=es",
+    "icon": "/icons/instagram.svg"
+  },
+  {
+    "id": 5,
+    "name": "GitLab",
+    "link": "https://gitlab.com/sabrinatolmer",
+    "icon": "/icons/gitlab.svg"
+  }
+]

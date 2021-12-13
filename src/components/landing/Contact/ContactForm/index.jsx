@@ -123,7 +123,7 @@ const ContactForm = () => (
 					</InputField>
 				)}
 				<Center>
-					<Button secondary type="submit" disabled={isSubmitting}>
+					<Button type="submit" disabled={isSubmitting}>
 						Submit
 					</Button>
 				</Center>

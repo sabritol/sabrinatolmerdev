@@ -1,0 +1,138 @@
+[
+    {
+        "id": 0,
+        "title": "Badem Atelier",
+        "shortDescription": "An eComerce web site migration",
+        "longDescription": [
+            "The goal was to update the site and migrate the stack technologie for more scalable and intuitive UX/UI.",
+            "The main idea is be able to sell a wide variety of product with minimal effort at the time of adding new designs and generating new products."
+        ],
+        "url": "https://atelierbadem.com/",
+        "relevantLinks": [],
+        "repoUrl": "",
+        "image": "projects/badem.jpg",
+        "madeWidth": [
+            "Gatsby",
+            "eComerce",
+            "NodeJS",
+            "Mollie"
+        ],
+        "type": "eComerce",
+        "year": 2020
+    },
+    {
+        "id": 1,
+        "title": "Jellyfish Generator",
+        "shortDescription": "Computer game & interactive installation.",
+        "longDescription": [
+            "A very simple, playable game that served as the interactive backdrop for the Jellyfish party, an periodic live event hosted at the Valparaiso Boat."
+            
+        ],
+        "url": "http://www.findglocal.com/NL/Amsterdam-Centrum/1507449089387503/Elfwings",
+        "relevantLinks": [],
+        "repoUrl": "https://github.com/sabritol/Jellyfish-Generator",
+        "image": "projects/jelyfishgenerator.jpg",
+        "madeWidth": [
+            "Unity3D",
+            "Text Mesh Pro",
+            "Uniclick Game",
+            "Open Source"
+        ],
+        "type": "GameApp",
+        "year": 2019
+    },
+    {
+        "id": 2,
+        "title": "Human Beyond Labs",
+        "shortDescription": "Creative studio that focuses on interactive storytelling through immersive installations using AI.",
+        "longDescription": [
+            "The website was developed as a Progressive Web App with the goal of acting as an online portfolio and a portal for users to book workshops and events organized by the studio.",
+            "Firebase was used as a host due to the ease of implementation and low costs for small userbase apps."
+        ],
+        "url": "https://humanbeyondlabs.com/",
+        "relevantLinks": [],
+        "repoUrl": "https://gitlab.com/sabrinatolmer/humanbeyondlabs.com",
+        "image": "projects/humanbeyondlabs.jpg",
+        "madeWidth": [
+            "NodeJS",
+            "VueJS",
+            "NuxtJS",
+            "Firebase"
+        ],
+        "type": "WebApp",
+        "year": 2018
+    },
+    {
+        "id": 3,
+        "title": "Body Meting Yoga",
+        "shortDescription": "A dinamic Yoga blog site with CMS.",
+        "longDescription": [
+            "The organization needed a flexible and lightweight platform to explain who they are and what they do.",
+            "The website was developed as a Progressive Web App in order to accommodate for future features like a blog, social media feed, and interactive storytelling.",
+            "Frebase was used as a host due to the easy of implementation and low costs for small userbase apps."
+        ],
+        "url": "",
+        "relevantLinks": [],
+        "repoUrl": "",
+        "image": "projects/bodymetingyoga2.jpg",
+        "madeWidth": [
+            "Gatsby",
+            "Netlifycms",
+            "React",
+            "NodeJS"
+        ],
+        "type": "Blog Site",
+        "year": 2018
+    },
+    {
+        "id": 6,
+        "title": "Instant of Singularity",
+        "shortDescription": "A short piece of interactive contemporary art.",
+        "longDescription": [
+            "An immersive experience that combines original music, dance performances, visual projections and also fragrances: seven minutes of singularity set on a futuristic landscape filled with magical realism. ",
+            "As a choreographer, I was especially motivated by the possibility of augmenting the actual stage, which opened a door to reinvent and rediscover choreographic composition. ",
+            "To achieve the final piece we used several different techniques and platforms: Resolume Arena to run the loops and synchronize the mapping on location; Processing for prototype our visual scene components and Unity3D for a more robust design and integration. ",
+            "Beyond the collaborative decision-making process that shaped the whole project, I served as a producer, dancer and developer."
+        ],
+        "url": "https://www.instagram.com/opentodo/",
+        "relevantLinks": [
+            "https://www.facebook.com/opentodo/videos/176732546233158/"
+        ],
+        "repoUrl": "https://github.com/ecovirtual/kinectvision",
+        "image": "projects/singularity_instant.jpg",
+        "madeWidth": [
+            "Processing",
+            "Unity3d",
+            "Resolume",
+            "Kinect v2"
+        ],
+        "type": "Interactive Installation",
+        "year": 2017
+    },
+    {
+        "id": 7,
+        "title": "Singularity Horizon",
+        "shortDescription": "An interactive contemporary dance piece in seven acts.",
+        "longDescription": [
+            "The first full piece by OpenLab, a diverse collective of artists coalescing in a stage composition that involves narrative, dancing and original music played on-location by an orchestra, all enhanced with interactive visual and sound elements. ",
+            " Again, we resorted to Resolume Arena (to run the visual loops and synchronize the mapping on location), Unity3D (as our engine for design), and Processing (for data moshing in some specific clips), as well as Adobe After Effects to design the individual graphic pieces.",
+            " The result was a 40-minute long interactive dance play with live orchestral music and whole olfactory experience that would go along with the narrative. I was the general producer, choreographer and developer."
+            
+            
+        ],
+        "url": "https://www.instagram.com/opentodo/",
+        "relevantLinks": [
+            "https://www.facebook.com/opentodo/videos/193581361214943/"
+        ],
+        "repoUrl": "https://github.com/sabritol/kinectvision",
+        "image": "projects/singularity_horizon.jpg",
+        "madeWidth": [
+            "Processing",
+            "Unity3d",
+            "Resolume",
+            "Kinect v2"
+        ],
+        "type": "Interactive Installation",
+        "year": 2017
+    }
+]
