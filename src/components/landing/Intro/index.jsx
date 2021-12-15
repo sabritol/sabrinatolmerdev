@@ -4,8 +4,8 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import Particles from "react-tsparticles";
+import transparent from '../../../assets/illustrations/trans.png'
 
-import Animation from './Animation';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -16,13 +16,15 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi! I am Wayra</h1>
-          <h4> Creative artist and software enggenier</h4>
-        <Thumbnail   style={{ position: "relative", marginLeft:"50%", marginTop: "-100px" }} >
-          <Animation />
+          <h1>SOFTWARE DEVELOPER & CHIEF CREATIVE OFFICER </h1>
+          <br/>
+          <br/>
+          <h3> I develop information technology solutions <br/> for digital innovation projects.</h3>
+        <Thumbnail >
+          <img src ={transparent} className='satelite-animated' alt="" />
         </Thumbnail>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            Let's have a chat
           </Button>
         </Details>
         <Particles style={{position: "fixed", width: "100%", zIndex: "-1"}}
