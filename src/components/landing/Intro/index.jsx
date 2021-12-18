@@ -5,8 +5,8 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import Particles from "react-tsparticles";
 import transparent from '../../../assets/illustrations/trans.png'
-
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import { SocialLinks } from '../../common';
+import { Wrapper, IntroWrapper, Details, Thumbnail, Social } from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -21,9 +21,12 @@ export const Intro = () => {
           <br/>
           <h3> I develop information technology solutions <br/> for digital innovation projects.</h3>
         <Thumbnail >
-          <img src ={transparent} className='satelite-animated' alt="" />
+          <img src ={transparent} className='satelite-animated' alt="satelite" />
         </Thumbnail>
-          <Button as={AnchorLink} href="#contact">
+          <Social> 
+           <SocialLinks/>
+          </Social>
+          <Button className='intro-btn'as={AnchorLink} href="#contact">
             Let's have a chat
           </Button>
         </Details>

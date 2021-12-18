@@ -5,7 +5,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Button, Container, SocialLinks } from 'components/common';
 import Sabrina from '../../../assets/illustrations/sabrina.jpeg'
 
-import { Wrapper, ConsultancyWrapper, Thumbnail, Details, Profile, ProfilePicture } from './styles'
+import { Wrapper, ConsultancyWrapper, Details, Profile, ProfilePicture } from './styles'
 
 export const Consultancy = () => {
     const { theme } = useContext(ThemeContext);

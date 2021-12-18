@@ -6,6 +6,7 @@
 	"author": "Smakosh <ismai23l@hotmail.com>",
 	"dependencies": {
 		"@react-pdf/renderer": "^2.0.21",
+		"@react-spring/web": "^9.3.1",
 		"axios": "^0.21.1",
 		"dotenv": "^10.0.0",
 		"formik": "^2.1.4",
@@ -28,8 +29,10 @@
 		"react-helmet": "^6.1.0",
 		"react-modal": "^3.14.4",
 		"react-router-dom": "^5.2.1",
+		"react-spring": "^9.3.2",
 		"react-tsparticles": "^1.37.5",
 		"styled-components": "^5.3.0",
+		"styled-system": "^5.1.5",
 		"yup": "^0.32.9"
 	},
 	"keywords": [

@@ -12,7 +12,6 @@ const animatedNasa = keyframes`
       100% {
         background-position: 0 0;
       }
-
 `;
 
 export const Wrapper = styled.div`
@@ -20,6 +19,19 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+`;
+
+export const Social = styled.div`
+  position: absolute;
+  padding: 15px;
+  top: 55%;
+  left: 7.5rem;
+
+  @media (max-width: 680px) {
+    left: 1px;
+    top: 22rem;
+    padding: 1px;
+  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -41,9 +53,15 @@ export const Details = styled.div`
     margin-bottom: 2rem;
   }
 
+  a.intro-btn {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+  }
+
   h1 {
     margin-bottom: 1rem;
-    margin-top: -1rem;
+    margin-top: 2rem;
     font-size: 26pt;
     letter-spacing: 4px;
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
@@ -58,18 +76,16 @@ export const Details = styled.div`
     @media (max-width: 680px) {
       font-size: 17pt;
       margin-bottom: 4rem;
-      margin-top: -1rem;
-      /* text-align: justify;
-      text-justify: inter-word; */
+      margin-top: -3rem;
       line-height: 1.8rem;
       text-align: center;
     }
   }
 
   h3 {
-    text-transform: uppercase
-    margin-bottom: -1rem;
-    font-size: 20pt;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 25pt;
     font-weight: normal;
     color: ${({ theme }) => (theme === "light" ? "#707070" : "#e6e6e6")};
 
@@ -80,8 +96,12 @@ export const Details = styled.div`
     }
 
     @media (max-width: 680px) {
-      font-size: 21.5pt;
+      font-size: 19pt;
+      text-align: left;
       line-height: 2.3rem;
+      margin-bottom: 4rem;
+      margin-top: -5rem;
+      left: 5px;
     }
   }
 `;
@@ -96,9 +116,9 @@ export const Thumbnail = styled.div`
 
 
   img.satelite-animated {
-    animation: ${animatedNasa} 10s ease infinite;
-    height: 520px;
-    width: 500px;
+    animation: ${animatedNasa} 15s ease infinite;
+    height: 505px;
+    width: 450px;
     margin-top: -100px;
     margin-left: 600px;
     background-image: url(${satelite});
@@ -109,9 +129,9 @@ export const Thumbnail = styled.div`
   @media (max-width: 960px) {
     width: 140%;
     position: relative;
-    margin-top: -5rem;
-    margin-left: 1rem;
-    height: 300px;
+    margin-top: -7rem;
+    margin-left: 3rem;
+    height: 350px;
     width: 300px;
   }
 `;
