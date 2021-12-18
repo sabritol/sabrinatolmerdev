@@ -10,5 +10,5 @@ Container.defaultProps = {
   minWidth: 288,
   maxWidth: 1440,
   py: 0,
-  px: 3
+  px: 0
 };

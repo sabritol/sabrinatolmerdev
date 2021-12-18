@@ -1,8 +1,8 @@
 export default [
   {
     url: "https://images.pexels.com/photos/1823734/pexels-photo-1823734.jpeg",
-    title: "Lorem ipsum dolor sit amet",
-    text: "Consectetur adipiscing elit. Cras euismod scelerisque nisl id viverra. Vivamus vestibulum turpis nec pellentesque convallis.",
+    title: "Jellyfish Generator",
+    text: "A very simple, playable game that served as the interactive backdrop for the Jellyfish party, an periodic live event hosted at the Valparaiso Boat in Amsterdam.",
   },
   {
     url: "https://images.pexels.com/photos/1769386/pexels-photo-1769386.jpeg?",
