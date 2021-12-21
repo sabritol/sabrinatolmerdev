@@ -1,37 +1,48 @@
+import jely from "../../../assets/images/jelyfishgenerator.jpg";
+import human from "../../../assets/images/beyon.jpg";
+import caro from "../../../assets/images/caro.jpg";
+import food from "../../../assets/images/fiction.jpg";
+import instante from "../../../assets/images/one.jpeg";
+import hori from "../../../assets/images/hori.jpeg";
+import neuronal from "../../../assets/images/neuronal.jpeg";
 export default [
   {
-    url: "https://images.pexels.com/photos/1823734/pexels-photo-1823734.jpeg",
+    url: jely,
     title: "Jellyfish Generator",
-    text: "A very simple, playable game that served as the interactive backdrop for the Jellyfish party, an periodic live event hosted at the Valparaiso Boat in Amsterdam.",
+    text: "A simple, playable game that served as the interactive backdrop for the Jellyfish party, an periodic live event hosted at the Valparaiso Boat in Amsterdam.",
   },
   {
-    url: "https://images.pexels.com/photos/1769386/pexels-photo-1769386.jpeg?",
-    title: "Mauris eget tincidunt metus",
-    text: "Nec tempor mi. Aenean euismod nunc ligula, ut tincidunt elit pretium at. Integer a molestie purus. Aliquam erat volutpat. Ut id urna eget velit ullamcorper cursus.",
+    url: human,
+    title: "Human Beyond Labs",
+    text: "The website was developed as a Progressive Web App with the goal of acting as an online portfolio and a portal for users to book workshops and events organized by the studio.",
   },
   {
-    url: "https://images.pexels.com/photos/1563256/pexels-photo-1563256.jpeg",
-    title: "Nullam viverra est",
-    text: "Vitae pulvinar tincidunt. Donec vel magna nunc. Cras pharetra cursus lectus, a pharetra orci iaculis non. Quisque eget mauris in lorem sodales gravida in sit amet ligula.",
+    url: caro,
+    title: "Yoga Brand",
+    text: "The goal with this project was to build a dynamic landing page with full SEO indexing and content management system.",
   },
   {
-    url: "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg",
-    title: "Sed accumsan",
+    url: food,
+    title: "Food Fiction",
     text: "Condimentum leo, vel fermentum massa pulvinar vitae. Nam a felis libero. Fusce pellentesque dignissim finibus. Nulla hendrerit vulputate nisl, nec aliquam elit mollis eu.",
   },
   {
-    url: "https://images.pexels.com/photos/2100018/pexels-photo-2100018.jpeg",
-    title: "Praesent varius",
-    text: "Massa vitae ornare vestibulum, ligula elit ultrices mi, nec scelerisque odio nulla ut eros. Nam sit amet sem sit amet augue dictum convallis. Integer congue tortor dui.",
+    url: instante,
+    title: "Instant of Singularity",
+    text: [
+      "An immersive experience that combines original music, dance performances, visual projections and also fragrances: seven minutes of singularity set on a futuristic landscape filled with magical realism. ",
+      "As a choreographer, I was especially motivated by the possibility of augmenting the actual stage, which opened a door to reinvent and rediscover choreographic composition.",
+      "To achieve the final piece we used several different techniques and platforms: Resolume Arena to run the loops and synchronize the mapping on location; Processing for prototype our visual scene components and Unity3D for a more robust design and integration.",
+    ],
   },
   {
-    url: "https://images.pexels.com/photos/1963557/pexels-photo-1963557.jpeg",
-    title: "In arcu metus",
+    url: hori,
+    title: "Singularity",
     text: "Integer at hendrerit odio. Quisque non enim tellus. Etiam commodo quam quis eleifend ullamcorper.",
   },
   {
-    url: "https://images.pexels.com/photos/1769409/pexels-photo-1769409.jpeg",
-    title: "Phasellus at scelerisque metus",
+    url: neuronal,
+    title: "Transfer Style",
     text: "usce auctor, risus eget laoreet dictum, justo odio venenatis quam, et porta tellus ante ac purus.",
   },
   {

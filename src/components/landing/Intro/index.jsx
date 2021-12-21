@@ -16,7 +16,7 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>SOFTWARE DEVELOPER & CHIEF CREATIVE OFFICER </h1>
+          <h1>Software Developer & Chief Creative Officer </h1>
           <br/>
           <br/>
           <h3> I develop information technology solutions <br/> for digital innovation projects.</h3>

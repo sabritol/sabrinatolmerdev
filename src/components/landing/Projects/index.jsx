@@ -46,7 +46,7 @@ AnimatedItem.defaultProps = {
 
 const TitleWrapper = styled(animated(Flex))``;
 TitleWrapper.defaultProps = {
-  color: "text100",
+  color: "theme",
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",

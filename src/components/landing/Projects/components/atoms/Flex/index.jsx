@@ -7,6 +7,7 @@ const composedHelpers = compose(flexbox);
 
 export const Flex = styled(Box)`
   display: flex;
+  color: #fff;
 
   ${composedHelpers}
 `;

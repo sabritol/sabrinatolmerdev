@@ -32,6 +32,7 @@ export const composedHelpers = compose(
 );
 
 export const Box = styled.div`
+  color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
   ${composedHelpers}
 `;
 

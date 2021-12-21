@@ -83,7 +83,7 @@ export const Details = styled.div`
   }
 
   h3 {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 25pt;
     font-weight: normal;
@@ -114,7 +114,6 @@ export const Thumbnail = styled.div`
     width: 50%;
   }
 
-
   img.satelite-animated {
     animation: ${animatedNasa} 15s ease infinite;
     height: 505px;
@@ -125,13 +124,13 @@ export const Thumbnail = styled.div`
     background-repeat: no-repeat;
     border: none;
 
-
-  @media (max-width: 960px) {
-    width: 140%;
-    position: relative;
-    margin-top: -7rem;
-    margin-left: 3rem;
-    height: 350px;
-    width: 300px;
+    @media (max-width: 960px) {
+      width: 140%;
+      position: relative;
+      margin-top: -7rem;
+      margin-left: 3rem;
+      height: 350px;
+      width: 300px;
+    }
   }
 `;

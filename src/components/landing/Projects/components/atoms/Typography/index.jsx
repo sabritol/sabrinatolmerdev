@@ -7,6 +7,8 @@ const composedHelpers = compose(lineHeight);
 
 export const Typography = styled(Box)`
   ${composedHelpers}
+  color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
+
 `;
 
 Typography.defaultProps = {
