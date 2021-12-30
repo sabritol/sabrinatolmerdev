@@ -29,7 +29,10 @@ export const Details = styled.div`
   }
 
   h2 {
+    text-transform: uppercase;
     margin-bottom: 2rem;
+    margin-top: 50px;
+    left: 7rem;
     font-size: 26pt;
     color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
 

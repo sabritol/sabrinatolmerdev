@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ConsultancyWrapper = styled.div`
+  margin-top: 6rem;
   padding: 4rem 0 0;
   display: flex;
   align-items: flex-start;
@@ -79,7 +80,10 @@ export const ProfilePicture = styled.div`
   }
 `;
 export const Profile = styled.div`
-  flex: 100;
+  flex: 100%;
+  height: 500px;
+  top: 5px;
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: column;
@@ -88,8 +92,7 @@ export const Profile = styled.div`
   padding: 3rem 3rem 3rem;
   border-radius: 6px;
 
-  background-color: ${({ theme }) =>
-    theme === "light" ? "#e6e6e6" : "#707070"};
+  background-color: rgba(84, 87, 160, 0.5);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   h4 {

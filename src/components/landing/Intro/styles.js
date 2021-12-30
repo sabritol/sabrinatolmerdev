@@ -23,9 +23,9 @@ export const Wrapper = styled.div`
 
 export const Social = styled.div`
   position: absolute;
-  padding: 15px;
-  top: 55%;
-  left: 7.5rem;
+  padding: 3px;
+  margin-top: 5rem;
+  margin-left: 1px;
 
   @media (max-width: 680px) {
     left: 1px;
@@ -60,10 +60,13 @@ export const Details = styled.div`
   }
 
   h1 {
+    text-transform: uppercase;
     margin-bottom: 1rem;
-    margin-top: 2rem;
-    font-size: 26pt;
-    letter-spacing: 4px;
+    margin-left: -5rem;
+    margin-top: -2rem;
+    font-size: 95pt;
+    letter-spacing: -2px;
+    font-weight: bold;
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
 
     @media (max-width: 960px) {
@@ -83,7 +86,6 @@ export const Details = styled.div`
   }
 
   h3 {
-    //text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 25pt;
     font-weight: normal;
@@ -108,22 +110,19 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
-  img {
-    position: relative;
-    height: auto;
-    width: 50%;
-  }
 
   img.satelite-animated {
-    animation: ${animatedNasa} 15s ease infinite;
-    height: 505px;
-    width: 450px;
-    margin-top: -100px;
-    margin-left: 600px;
+    animation: ${animatedNasa} 20s ease infinite;
+    height: 405px;
+    width: 350px;
+    top: 350px;
+    margin-left: 900px;
     background-image: url(${satelite});
     background-repeat: no-repeat;
+    position: absolute;
     border: none;
 
+    //TODO: change the parameters tobe responsive
     @media (max-width: 960px) {
       width: 140%;
       position: relative;

@@ -28,11 +28,5 @@
     "name": "Instagram",
     "link": "https://www.instagram.com/iamwayra/?hl=es",
     "icon": "/icons/instagram.svg"
-  },
-  {
-    "id": 5,
-    "name": "GitLab",
-    "link": "https://gitlab.com/sabrinatolmer",
-    "icon": "/icons/gitlab.svg"
   }
 ]

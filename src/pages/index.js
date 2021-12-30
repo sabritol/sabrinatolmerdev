@@ -12,9 +12,9 @@ const Home = () => (
   <Layout>
     <Seo />
     <Intro />
-    <Projects />
-    <Skills />
     <Consultancy />
+    <Skills />
+    <Projects />
     <Contact />
   </Layout>
 );

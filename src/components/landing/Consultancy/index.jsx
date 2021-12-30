@@ -15,7 +15,7 @@ export const Consultancy = () => {
 		<ConsultancyWrapper as={Container}>
          {/* <Thumbnail>
         </Thumbnail>    */}
-        <Profile theme={theme} style={{alingItems:"center"}}>
+        <Profile style={{alingItems:"center"}}>
 		<h2>I can help you with</h2>
 				<ProfilePicture>
 					<img className='profile-pic' src={Sabrina} alt="Wayra Full-stack Developer Creative Technologist" />

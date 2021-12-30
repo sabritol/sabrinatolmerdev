@@ -5,7 +5,7 @@ import { animated, useSprings } from "react-spring";
 
 import styled from "styled-components";
 
-import { Wrapper } from './styles';
+import { Wrapper, Thumbnail } from './styles';
 
 import {
   Box,
@@ -16,6 +16,8 @@ import {
 } from "./components/index.js";
 
 import "./components/molecules/global-styles/global-styles.css";
+// import LinkIcon from "../../../assets/icons/link.svg";
+// import GithubIcon from "../../../assets/icons/github.svg";
 
 import cards from "./data.js";
 
@@ -45,15 +47,15 @@ AnimatedItem.defaultProps = {
 };
 
 const TitleWrapper = styled(animated(Flex))``;
-TitleWrapper.defaultProps = {
-  color: "theme",
+TitleWrapper.defaultProps = { 
+  color:  "#858484",
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
   width: 1,
   height: "100%",
   p: [1, null, 2],
-  background: "rgba(0,0,0,0.6)",
+  background: "rgba(0,0,0,0.8)",
   fontSize: [4, null, 5]
 };
 
@@ -99,6 +101,9 @@ export const Projects = () => {
 
   return (
   <Wrapper as={Container} id="projects">
+    <Thumbnail theme={theme}>
+    <h2>Projects</h2>
+    </Thumbnail>
       <Box theme={theme} bg="bg100" minHeight="100vh" pt={1} pb={12}>
         <Container>
           <GridContainer>
@@ -128,6 +133,24 @@ export const Projects = () => {
                         {cards[i].title}
                       </Typography>
                       {cards[i].text}
+                      {/* <Actions>
+                        <div className="links">
+                            {this.props.project.url &&
+                                <div>
+                                    <a aria-label="Link" href={this.props.project.url} target="_blank">
+                                        <img src={LinkIcon} width="24" alt="Project Website" />
+                                    </a>
+                                </div>
+                            }
+                            {this.props.project.repoUrl &&
+                                <div>
+                                    <a href={this.props.project.repoUrl} target="_blank">
+                                        <img src={GithubIcon} width="24" alt="Github" />
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </Actions> */}
                     </AnimatedBox>
                   </TextWrapper>
                 </AnimatedItem>
