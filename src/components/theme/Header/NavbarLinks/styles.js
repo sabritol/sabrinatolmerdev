@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 							margin-right: unset;
 					}
 					&:hover {
-                   color: #5457a0;
+                   color: #bf4134;
   }
 			}
 		`

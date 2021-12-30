@@ -10,7 +10,7 @@ export const Contact = () => (
       <ContactForm />
     </Details>
     <Thumbnail>
-    <h2>Interested in working together?</h2>
+    <h2>Feel like getting in touch?</h2>
     <h3> Let's have a chat. </h3> 
       <img src={constela} alt="I’m John and I’m a Backend & Devops engineer!" />
     </Thumbnail>

@@ -21,7 +21,6 @@ export const Consultancy = () => {
 					<img className='profile-pic' src={Sabrina} alt="Wayra Full-stack Developer Creative Technologist" />
 				</ProfilePicture>
 				<SocialLinks/>
-				<h4>Learn more and</h4>
 				{/* <SocialLinks /> */}
 				{/* <p>Founder @ <br /><a href="https://humanbeyondlabs.com/" target='_blank'>Human Beyond Labs</a> & <a href="https://consciousgeekstuff.com/" target='_blank'>Conscious Geek Stuff</a></p> */}
 				{/* <p className="has-border">Available for <AnchorLink href="#contact">hire</AnchorLink></p> */}
