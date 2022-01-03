@@ -20,14 +20,19 @@ export const Wrapper = styled.div`
 					display: none;
 			}
 
-			a {     color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
+			a {     color: darkgrey;
+				    -webkit-text-stroke: 1px #008080;
+
+
 					margin-right: 1rem;
 
 					&:last-child {
 							margin-right: unset;
 					}
 					&:hover {
-                   color: #bf4134;
+						color: lightgray;
+						text-shadow: 4px 4px 0 #bf4134;
+						-webkit-text-stroke: 1px #008080;
   }
 			}
 		`

@@ -5,7 +5,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Button, Container, SocialLinks } from 'components/common';
 import Sabrina from '../../../assets/illustrations/sabrina.jpeg'
 
-import { Wrapper, ConsultancyWrapper, Details, Profile, ProfilePicture } from './styles'
+import { Wrapper, ConsultancyWrapper, ConsulWrapper, ProfilePicture, SkillsColumn  } from './styles'
 
 export const Consultancy = () => {
     const { theme } = useContext(ThemeContext);
@@ -13,26 +13,44 @@ export const Consultancy = () => {
     return ( 
 	<Wrapper id="consultancy">
 		<ConsultancyWrapper as={Container}>
-         {/* <Thumbnail>
-        </Thumbnail>    */}
-        <Profile style={{alingItems:"center"}}>
-		<h2>I can help you with</h2>
+        <ConsulWrapper> 
+		<SkillsColumn>
 				<ProfilePicture>
 					<img className='profile-pic' src={Sabrina} alt="Wayra Full-stack Developer Creative Technologist" />
 				</ProfilePicture>
 				<SocialLinks/>
-				{/* <SocialLinks /> */}
-				{/* <p>Founder @ <br /><a href="https://humanbeyondlabs.com/" target='_blank'>Human Beyond Labs</a> & <a href="https://consciousgeekstuff.com/" target='_blank'>Conscious Geek Stuff</a></p> */}
-				{/* <p className="has-border">Available for <AnchorLink href="#contact">hire</AnchorLink></p> */}
         <Button>
             <a href='resume.pdf'> Dowload my resume</a>
         </Button>
-        <Details >
-        <h2>I can help you with</h2>
+		</SkillsColumn>
 
-        </Details>
-			</Profile>
+		<SkillsColumn>
+				<h3>Software Development</h3>
+				<p>I can deliver solutions in the shape of:</p>
+				<hr />
+				<ul>
+					<li>Websites</li>
+					<li>eCommerce</li>
+					<li>Web Apps</li>
+					<li>Game Apps</li>
+					<li>Unity 3D</li>
+					<li>Data Collection & Analysis Tools</li>
+				</ul>	
+			</SkillsColumn>
+			<SkillsColumn>
+				<h3>Creative Consultancy</h3>
+				<p>I can work with you and your team on:</p>
+				<hr />
+				<ul>
+					<li>Adopting best practices for agile development</li>
+					<li>Transitioning into a data-driven culture</li>
+					<li>Designing Big Data pipelines</li>
+					<li>Assessing technical feasibility & scalability</li>
+				</ul>
+			</SkillsColumn>
+			</ConsulWrapper>
 		</ConsultancyWrapper>
+		
 	</Wrapper>
 );
 };

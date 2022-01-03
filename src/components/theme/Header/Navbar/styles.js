@@ -8,10 +8,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
+  color: lightgray;
+  text-shadow: 1px 1px 0 hsl(180, 100%, 30%);
+  -webkit-text-stroke: 0.5px #009999;
+
+  :hover {
+  }
 
   @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) =>
-      theme === "light" ? "unset" : "difference"};
+    color: white;
   }
 `;

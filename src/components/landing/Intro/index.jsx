@@ -5,7 +5,6 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import Particles from "react-tsparticles";
 import transparent from '../../../assets/illustrations/trans.png'
-import { SocialLinks } from '../../common';
 import { Wrapper, IntroWrapper, Details, Thumbnail, Social } from './styles';
 
 export const Intro = () => {
@@ -20,9 +19,6 @@ export const Intro = () => {
         <Thumbnail >
           <img src ={transparent} className='satelite-animated' alt="satelite" />
         </Thumbnail>
-          <Social> 
-           <SocialLinks/>
-          </Social>
           <Button className='intro-btn'as={AnchorLink} href="#contact">
             Let's have a chat
           </Button>
