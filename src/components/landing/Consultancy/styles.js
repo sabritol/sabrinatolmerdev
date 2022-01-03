@@ -119,11 +119,24 @@ export const ProfilePicture = styled.div`
 export const ConsulWrapper = styled.div`
   padding: 4rem 0 0;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   background-color: rgba(84, 87, 160, 0.5);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 50px;
+    left: 7rem;
+    font-size: 26pt;
+    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
+    }
+  }
 
   @media (max-width: 960px) {
     flex-direction: column;
