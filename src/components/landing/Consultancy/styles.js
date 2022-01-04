@@ -118,6 +118,7 @@ export const ProfilePicture = styled.div`
 
 export const ConsulWrapper = styled.div`
   padding: 4rem 0 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: rgba(84, 87, 160, 0.5);

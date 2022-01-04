@@ -14,9 +14,8 @@ export const Consultancy = () => {
 	<Wrapper id="consultancy">
 		<ConsultancyWrapper as={Container}>
         <ConsulWrapper> 
-		<h2> consultancy and collaborations </h2>
-
 		<SkillsColumn>
+		<h3>I can help you and your team</h3>
 				<ProfilePicture>
 					<img className='profile-pic' src={Sabrina} alt="Wayra Full-stack Developer Creative Technologist" />
 				</ProfilePicture>
