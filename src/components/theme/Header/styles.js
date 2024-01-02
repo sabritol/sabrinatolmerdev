@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import header from "../../../assets/illustrations/header.svg";
+
 export const Wrapper = styled.div`
   background: transparent;
   background-image: url(${header});

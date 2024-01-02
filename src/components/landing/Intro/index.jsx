@@ -5,7 +5,7 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import Particles from "react-tsparticles";
 import transparent from '../../../assets/illustrations/trans.png'
-import { Wrapper, IntroWrapper, Details, Thumbnail, Social } from './styles';
+import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);

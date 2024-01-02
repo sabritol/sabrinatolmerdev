@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { ThemeContext } from 'providers/ThemeProvider';
 import { Button, Container, SocialLinks } from 'components/common';
 import Sabrina from '../../../assets/illustrations/sabrina.jpeg'
 
 import { Wrapper, ConsultancyWrapper, ConsulWrapper, ProfilePicture, SkillsColumn  } from './styles'
 
 export const Consultancy = () => {
-    const { theme } = useContext(ThemeContext);
+ 
 
     return ( 
 	<Wrapper id="consultancy">

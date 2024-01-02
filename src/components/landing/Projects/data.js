@@ -5,7 +5,8 @@ import food from "../../../assets/images/fiction.jpg";
 import instante from "../../../assets/images/one.jpeg";
 import hori from "../../../assets/images/hori.jpeg";
 import neuronal from "../../../assets/images/neuronal.jpeg";
-export default [
+
+const projects = [
   {
     url: jely,
     title: "Jellyfish Generator",
@@ -51,3 +52,5 @@ export default [
     text: "Mauris ornare mattis eros vitae iaculis. Fusce blandit eget enim eu tempor. Donec in risus nec augue pharetra ornare. Phasellus dignissim mi eu nulla malesuada bibendum.",
   },
 ];
+
+export default projects;
