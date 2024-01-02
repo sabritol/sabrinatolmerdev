@@ -10,6 +10,7 @@ export const Skills = () => {
 
   return (
     <Wrapper id="about">
+     
       <SkillsWrapper as={Container}>
         <Thumbnail>
           <img src={dog} alt="dog"/>
@@ -32,6 +33,7 @@ export const Skills = () => {
           </Button>
         </Details>
       </SkillsWrapper>
+      
     </Wrapper>
   );
 };

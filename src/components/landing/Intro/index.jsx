@@ -15,7 +15,7 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Full Stack Developer & Chief Creative Officer </h1>
+          <h1>Software Developer  </h1>
         <Thumbnail >
           <img src ={transparent} className='satelite-animated' alt="satelite" />
         </Thumbnail>

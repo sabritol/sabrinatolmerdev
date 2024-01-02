@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
 `;
 
 export const ConsultancyWrapper = styled.div`
-  margin-top: 6rem;
   padding: 4rem 0 0;
   display: flex;
+  flex-direction: 2;
   justify-content: space-between;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -143,39 +143,3 @@ export const ConsulWrapper = styled.div`
     flex-direction: column;
   }
 `;
-// export const Profile = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   height: 100%;
-//   width: 100%;
-//   top: 5px;
-//   width: 100%;
-//   display: flex;
-//   flex-flow: column;
-//   justify-content: column;
-//   align-items: flex-start;
-//   text-align: center;
-//   padding: 3rem 3rem 3rem;
-//   border-radius: 6px;
-
-//   background-color: rgba(84, 87, 160, 0.5);
-//   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-//     0 1px 5px 0 rgba(0, 0, 0, 0.12);
-//   h4 {
-//     margin-bottom: 1rem;
-//     color: ${({ theme }) => (theme === "light" ? "#e6e6e6" : "#707070")};
-//   }
-//   p {
-//     font-size: 11pt;
-//     margin: 1rem 0 0;
-//     line-height: 1.3;
-//   }
-//   p.has-border {
-//     border: solid 1px #a432ce;
-//     padding: 0.5rem;
-//     border-radius: 6px;
-//   }
-//   @media (max-width: 960px) {
-//     width: 100%;
-//   }
-// `;

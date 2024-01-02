@@ -11,8 +11,9 @@ export const Consultancy = () => {
 
     return ( 
 	<Wrapper id="consultancy">
+		
 		<ConsultancyWrapper as={Container}>
-        <ConsulWrapper> 
+        {/* <ConsulWrapper> 
 		<SkillsColumn>
 		<h3>I can help you and your team</h3>
 				<ProfilePicture>
@@ -48,7 +49,7 @@ export const Consultancy = () => {
 					<li>Assessing technical feasibility & scalability</li>
 				</ul>
 			</SkillsColumn>
-			</ConsulWrapper>
+			</ConsulWrapper> */}
 		</ConsultancyWrapper>
 		
 	</Wrapper>
