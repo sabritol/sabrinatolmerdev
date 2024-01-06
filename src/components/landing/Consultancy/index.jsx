@@ -1,28 +1,36 @@
-import React from 'react'
+import React from "react";
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Button, Container, SocialLinks } from 'components/common';
-import Sabrina from '../../../assets/illustrations/sabrina.jpeg'
+import { Button, Container, SocialLinks } from "components/common";
+import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
 
-import { Wrapper, ConsultancyWrapper, ConsulWrapper, ProfilePicture, SkillsColumn  } from './styles'
+import {
+  Wrapper,
+  ConsultancyWrapper,
+  ConsulWrapper,
+  ProfilePicture,
+  SkillsColumn,
+} from "./styles";
 
 export const Consultancy = () => {
- 
-
-    return ( 
-	<Wrapper id="consultancy">
-		
-		<ConsultancyWrapper as={Container}>
-        {/* <ConsulWrapper> 
-		<SkillsColumn>
-		<h3>I can help you and your team</h3>
-				<ProfilePicture>
-					<img className='profile-pic' src={Sabrina} alt="Wayra Full-stack Developer Creative Technologist" />
-				</ProfilePicture>
-				<SocialLinks/>
-        <Button>
+  return (
+    <Wrapper id='consultancy'>
+      <ConsultancyWrapper as={Container}>
+        <ConsulWrapper>
+          {/* <ProfilePicture>
+            <img
+              className='profile-pic'
+              src={Sabrina}
+              alt='Wayra Full-stack Developer Creative Technologist'
+            />
+          </ProfilePicture>
+          <SocialLinks />
+          <Button>
             <a href='resume.pdf'> Dowload my resume</a>
-        </Button>
+          </Button> */}
+          {/* <SkillsColumn>
+		<h3>I can help you and your team</h3>
+		
 		</SkillsColumn>
 
 		<SkillsColumn>
@@ -37,8 +45,8 @@ export const Consultancy = () => {
 					<li>Unity 3D</li>
 					<li>Data Collection & Analysis Tools</li>
 				</ul>	
-			</SkillsColumn>
-			<SkillsColumn>
+			</SkillsColumn> */}
+          {/* <SkillsColumn>
 				<h3>Creative Consultancy</h3>
 				<p>I can work with you and your team on:</p>
 				<hr />
@@ -48,10 +56,9 @@ export const Consultancy = () => {
 					<li>Designing Big Data pipelines</li>
 					<li>Assessing technical feasibility & scalability</li>
 				</ul>
-			</SkillsColumn>
-			</ConsulWrapper> */}
-		</ConsultancyWrapper>
-		
-	</Wrapper>
-);
+			</SkillsColumn> */}
+        </ConsulWrapper>
+      </ConsultancyWrapper>
+    </Wrapper>
+  );
 };
