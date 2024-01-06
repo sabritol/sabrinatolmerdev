@@ -10,8 +10,9 @@ export const Wrapper = styled.div`
 export const ConsultancyWrapper = styled.div`
   padding: 4rem 0 0;
   display: flex;
-  flex-direction: 2;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  min-height: 100vh;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -117,7 +118,7 @@ export const ProfilePicture = styled.div`
 `;
 
 export const ConsulWrapper = styled.div`
-  padding: 4rem 0 0;
+  /* padding: 4rem 0 0; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -127,10 +128,7 @@ export const ConsulWrapper = styled.div`
 
   h2 {
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-top: 50px;
-    left: 7rem;
-    font-size: 26pt;
+    font-size: 20pt;
     color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
 
     @media (max-width: 960px) {

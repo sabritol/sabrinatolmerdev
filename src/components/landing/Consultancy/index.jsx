@@ -1,23 +1,23 @@
 import React from "react";
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Button, Container, SocialLinks } from "components/common";
-import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
+import { Container } from "components/common";
+// import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
 
 import {
   Wrapper,
   ConsultancyWrapper,
   ConsulWrapper,
-  ProfilePicture,
-  SkillsColumn,
+  // ProfilePicture,
+  // SkillsColumn,
 } from "./styles";
 
 export const Consultancy = () => {
   return (
     <Wrapper id='consultancy'>
       <ConsultancyWrapper as={Container}>
-        <ConsulWrapper>
-          {/* <ProfilePicture>
+        {/* <ConsulWrapper> */}
+        {/* <ProfilePicture>
             <img
               className='profile-pic'
               src={Sabrina}
@@ -28,7 +28,7 @@ export const Consultancy = () => {
           <Button>
             <a href='resume.pdf'> Dowload my resume</a>
           </Button> */}
-          {/* <SkillsColumn>
+        {/* <SkillsColumn>
 		<h3>I can help you and your team</h3>
 		
 		</SkillsColumn>
@@ -46,7 +46,7 @@ export const Consultancy = () => {
 					<li>Data Collection & Analysis Tools</li>
 				</ul>	
 			</SkillsColumn> */}
-          {/* <SkillsColumn>
+        {/* <SkillsColumn>
 				<h3>Creative Consultancy</h3>
 				<p>I can work with you and your team on:</p>
 				<hr />
@@ -57,7 +57,7 @@ export const Consultancy = () => {
 					<li>Assessing technical feasibility & scalability</li>
 				</ul>
 			</SkillsColumn> */}
-        </ConsulWrapper>
+        {/* </ConsulWrapper> */}
       </ConsultancyWrapper>
     </Wrapper>
   );
