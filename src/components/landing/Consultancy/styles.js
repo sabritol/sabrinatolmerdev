@@ -11,10 +11,14 @@ export const ConsultancyWrapper = styled.div`
   padding: 4rem 0 0;
   display: flex;
   flex-direction: column;
+  min-height: auto;
+
+  margin-top: 20rem;
   /* justify-content: space-between; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   @media (max-width: 960px) {
     flex-direction: column;
+    margin-top: 10rem;
   }
 `;
 
@@ -118,10 +122,9 @@ export const ProfilePicture = styled.div`
 `;
 
 export const ConsulWrapper = styled.div`
-  /* padding: 4rem 0 0; */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgba(84, 87, 160, 0.5);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
