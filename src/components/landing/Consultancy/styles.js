@@ -122,7 +122,10 @@ export const ProfilePicture = styled.div`
 `;
 
 export const ConsulWrapper = styled.div`
+  margin-top: 5%;
+  padding: 20px;
   width: 100%;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   background-color: rgba(84, 87, 160, 0.5);
@@ -140,7 +143,7 @@ export const ConsulWrapper = styled.div`
     }
   }
 
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  /* @media (max-width: 960px) {
+    flex-direction: row;
+  } */
 `;

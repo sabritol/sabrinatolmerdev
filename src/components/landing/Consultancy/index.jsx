@@ -1,29 +1,47 @@
-import React from "react";
+import React, { useContext } from "react";
 // import { PDFDownloadLink } from "@react-pdf/renderer";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Container } from "components/common";
-import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
-
-import {
-  Wrapper,
-  ConsultancyWrapper,
-  ConsulWrapper,
-  ProfilePicture,
-  SkillsColumn,
-} from "./styles";
+// import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
+import { Details } from "../Skills/styles";
+import { Wrapper, ConsultancyWrapper, ConsulWrapper } from "./styles";
+import { ThemeContext } from "providers/ThemeProvider";
 
 export const Consultancy = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <Wrapper id='consultancy'>
       <ConsultancyWrapper as={Container}>
-        <ConsulWrapper>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officia
-          amet in eaque nobis laboriosam eius fugiat blanditiis corrupti animi?
-          Itaque laudantium id totam dicta, minima in dolore quam at! Lorem
-          ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus neque
-          esse inventore dolore labore vitae ut perferendis, sint magnam aperiam
-          dolores ratione commodi eius eum, accusamus eos itaque libero fugiat.
-        </ConsulWrapper>
+        <Details theme={theme}>
+          <h2> React Development</h2>
+          <ConsulWrapper>
+            {/* <p>Boost your web applications with expert consultancy</p> */}
+            <p>
+              With in-depth knowledge of React and its ecosystem, I offer
+              specialized solutions to enhance your digital presence. My
+              services include:
+            </p>
+            <p>
+              ✨ Custom Development: Building dynamic, responsive user
+              interfaces with React, customized to meet your specific needs.
+            </p>
+            <p>
+              ✨ Code Optimization: Improving the performance and scalability of
+              your existing React applications.
+            </p>
+            <p>
+              ✨ Technical Guidance: Advising on best practices, architecture,
+              and integrating advanced tools for optimal results.
+            </p>
+            <p>
+              Partner with me to navigate the complexities of web development
+              with ease. Transform your concepts into impactful digital
+              experiences using React's robust features! Reach out to discuss
+              your project requirements and how we can achieve them together!
+            </p>
+          </ConsulWrapper>
+        </Details>
       </ConsultancyWrapper>
     </Wrapper>
   );
