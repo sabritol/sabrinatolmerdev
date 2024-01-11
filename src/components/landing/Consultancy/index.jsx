@@ -16,7 +16,6 @@ export const Consultancy = () => {
         <Details theme={theme}>
           <h2> React Development</h2>
           <ConsulWrapper>
-            {/* <p>Boost your web applications with expert consultancy</p> */}
             <p>
               With in-depth knowledge of React and its ecosystem, I offer
               specialized solutions to enhance your digital presence. My

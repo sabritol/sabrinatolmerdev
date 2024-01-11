@@ -1,9 +1,9 @@
 {
 	"name": "portfolio",
 	"private": true,
-	"description": "A simple portfolio for developers",
+	"description": "dev portfolio",
 	"version": "0.1.2",
-	"author": "Smakosh <ismai23l@hotmail.com>",
+	"author": "Sabrina Tolmer",
 	"dependencies": {
 		"@react-pdf/renderer": "^2.0.21",
 		"@react-spring/web": "^9.3.1",
