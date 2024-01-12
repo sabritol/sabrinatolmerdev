@@ -8,14 +8,15 @@ export const Wrapper = styled.div`
 `;
 
 export const ConsultancyWrapper = styled.div`
-  padding: 4rem 0 0;
+  position: relative;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   min-height: auto;
-
+  align-items: center;
+  justify-content: space-between;
   margin-top: 20rem;
-  /* justify-content: space-between; */
-  /* min-height: 100vh; */
+
   @media (max-width: 960px) {
     flex-direction: column;
     margin-top: 10rem;
@@ -122,8 +123,9 @@ export const ProfilePicture = styled.div`
 `;
 
 export const ConsulWrapper = styled.div`
+  border-radius: 30px;
   margin-top: 5%;
-  padding: 20px;
+  padding: 14px;
   width: 100%;
   flex-direction: column;
   display: flex;
@@ -142,8 +144,4 @@ export const ConsulWrapper = styled.div`
         theme === "light" ? "unset" : "difference"};
     }
   }
-
-  /* @media (max-width: 960px) {
-    flex-direction: row;
-  } */
 `;
