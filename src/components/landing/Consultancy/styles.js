@@ -16,7 +16,9 @@ export const ConsultancyWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 20rem;
-
+  p {
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
+  }
   @media (max-width: 960px) {
     flex-direction: column;
     margin-top: 10rem;
@@ -72,7 +74,7 @@ export const Details = styled.div`
   h2 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
+    color: ${({ theme }) => (theme === "light" ? "#707070" : "#e6e6e6")};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) =>

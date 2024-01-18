@@ -22,16 +22,18 @@ export const Consultancy = () => {
               services include:
             </p>
             <p>
-              ✨ Custom Development: Building dynamic, responsive user
-              interfaces with React, customized to meet your specific needs.
+              <strong> ✨ Custom Development:</strong> Building dynamic,
+              responsive user interfaces with React, customized to meet your
+              specific needs.
             </p>
             <p>
-              ✨ Code Optimization: Improving the performance and scalability of
-              your existing React applications.
+              <strong> ✨ Code Optimization:</strong> Improving the performance
+              and scalability of your existing React applications.
             </p>
             <p>
-              ✨ Technical Guidance: Advising on best practices, architecture,
-              and integrating advanced tools for optimal results.
+              <strong> ✨ Technical Guidance:</strong> Advising on best
+              practices, architecture, and integrating advanced tools for
+              optimal results.
             </p>
             <p>
               Partner with me to navigate the complexities of web development
