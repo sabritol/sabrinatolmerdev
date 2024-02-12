@@ -7,6 +7,7 @@ import Particles from "react-tsparticles";
 import transparent from "../../../assets/illustrations/trans.png";
 import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
 import { options } from "./particlesParams";
+import { SocialLinks } from "../../common";
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -27,7 +28,9 @@ export const Intro = () => {
           <Button className='intro-btn' as={AnchorLink} href='#contact'>
             Let's have a chat
           </Button>
+          <SocialLinks />
         </Details>
+
         <Particles
           style={{ position: "fixed", width: "100%", zIndex: "-1" }}
           options={options}
