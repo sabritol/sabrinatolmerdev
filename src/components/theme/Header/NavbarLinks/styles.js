@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   a {
-    color: rgb(191, 65, 52);
+    /* color: rgb(191, 65, 52); */
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 24px;
+
+    color: #bf4134;
+    /* text-shadow: 4px 4px 0 #bf4134; */
+    -webkit-text-stroke: 1.3px #008080;
 
     @media (max-width: 960px) {
       /* color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")}; */

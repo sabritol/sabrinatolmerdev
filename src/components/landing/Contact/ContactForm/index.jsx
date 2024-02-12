@@ -8,128 +8,146 @@ import { Button, Input } from "components/common";
 import { Error, Center, InputField } from "./styles";
 
 const ContactForm = () => (
-	<Formik
-		initialValues={{
-			name: "",
-			email: "",
-			message: "",
-			recaptcha: "",
-			success: false,
-		}}
-		validationSchema={Yup.object().shape({
-			name: Yup.string().required("Full name field is required"),
-			email: Yup.string()
-				.email("Invalid email")
-				.required("Email field is required"),
-			message: Yup.string().required("Message field is required"),
-			recaptcha:
-				process.env.NODE_ENV !== "development"
-					? Yup.string().required("Robots are not welcome yet!")
-					: Yup.string(),
-		})}
-		onSubmit={async (
-			{ name, email, message },
-			{ setSubmitting, resetForm, setFieldValue }
-		) => {
-			try {
-				await axios({
-					method: "POST",
-					url:
-						process.env.NODE_ENV !== "development"
-							? `${url}/api/contact`
-							: "http://localhost:3000/api/contact",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					data: JSON.stringify({
-						name,
-						email,
-						message,
-					}),
-				});
-				setSubmitting(false);
-				setFieldValue("success", true);
-				setTimeout(() => resetForm(), 6000);
-			} catch (err) {
-				setSubmitting(false);
-				setFieldValue("success", false);
-				alert("Something went wrong, please try again!");
-			}
-		}}
-	>
-		{({ values, touched, errors, setFieldValue, isSubmitting }) => (
-			<Form>
-				<InputField>
-					<Input
-						as={FastField}
-						type="text"
-						name="name"
-						component="input"
-						aria-label="name"
-						placeholder="Full name*"
-						error={touched.name && errors.name}
-					/>
-					<ErrorMessage component={Error} name="name" />
-				</InputField>
-				<InputField>
-					<Input
-						id="email"
-						aria-label="email"
-						component="input"
-						as={FastField}
-						type="email"
-						name="email"
-						placeholder="Email*"
-						error={touched.email && errors.email}
-					/>
-					<ErrorMessage component={Error} name="email" />
-				</InputField>
-				<InputField>
-					<Input
-						as={FastField}
-						component="textarea"
-						aria-label="message"
-						id="message"
-						rows="8"
-						type="text"
-						name="message"
-						placeholder="Message*"
-						error={touched.message && errors.message}
-					/>
-					<ErrorMessage component={Error} name="message" />
-				</InputField>
-				{values.name &&
-					values.email &&
-					values.message &&
-					process.env.NODE_ENV !== "development" && (
-						<InputField>
-							<FastField
-								component={Recaptcha}
-								sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
-								name="recaptcha"
-								onChange={(value) => setFieldValue("recaptcha", value)}
-							/>
-							<ErrorMessage component={Error} name="recaptcha" />
-						</InputField>
-					)}
-				{values.success && (
-					<InputField>
-						<Center>
-							<h4>
-								Your message has been successfully sent, I will get back to you
-								ASAP!
-							</h4>
-						</Center>
-					</InputField>
-				)}
-				<Center>
-					<Button type="submit" disabled={isSubmitting}>
-						Submit
-					</Button>
-				</Center>
-			</Form>
-		)}
-	</Formik>
+  <Formik
+    initialValues={{
+      name: "",
+      email: "",
+      message: "",
+      recaptcha: "",
+      success: false,
+    }}
+    validationSchema={Yup.object().shape({
+      name: Yup.string().required("Full name field is required"),
+      email: Yup.string()
+        .email("Invalid email")
+        .required("Email field is required"),
+      message: Yup.string().required("Message field is required"),
+      recaptcha:
+        process.env.NODE_ENV !== "development"
+          ? Yup.string().required("Robots are not welcome yet!")
+          : Yup.string(),
+    })}
+    onSubmit={async (
+      { name, email, message, recaptcha },
+      { setSubmitting, resetForm, setFieldValue }
+    ) => {
+      const formName = "contactForm"; // Make sure to set this to your Netlify form name
+      const formData = new URLSearchParams();
+      formData.append("form-name", formName);
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("message", message);
+
+      // Include the recaptcha response if it's part of the form
+      if (recaptcha) {
+        formData.append("recaptcha", recaptcha);
+      }
+      try {
+        await axios({
+          method: "POST",
+          url: "/",
+          //   url:
+          //     process.env.NODE_ENV !== "development"
+          //       ? `${url}/api/contact`
+          //       : "http://localhost:3000/api/contact",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          data: formData.toString(),
+          //   data: JSON.stringify({
+          //     name,
+          //     email,
+          //     message,
+          //   }),
+        });
+        setSubmitting(false);
+        setFieldValue("success", true);
+        setTimeout(() => resetForm(), 6000);
+      } catch (err) {
+        setSubmitting(false);
+        setFieldValue("success", false);
+        alert("Something went wrong, please try again!");
+      }
+    }}
+  >
+    {({ values, touched, errors, setFieldValue, isSubmitting }) => (
+      <Form
+        name='contactForm'
+        data-netlify='true'
+        method='POST'
+        action='/submit-form'
+      >
+        <InputField>
+          <Input
+            as={FastField}
+            type='text'
+            name='name'
+            component='input'
+            aria-label='name'
+            placeholder='Full name*'
+            error={touched.name && errors.name}
+          />
+          <ErrorMessage component={Error} name='name' />
+        </InputField>
+        <InputField>
+          <Input
+            id='email'
+            aria-label='email'
+            component='input'
+            as={FastField}
+            type='email'
+            name='email'
+            placeholder='Email*'
+            error={touched.email && errors.email}
+          />
+          <ErrorMessage component={Error} name='email' />
+        </InputField>
+        <InputField>
+          <Input
+            as={FastField}
+            component='textarea'
+            aria-label='message'
+            id='message'
+            rows='8'
+            type='text'
+            name='message'
+            placeholder='Message*'
+            error={touched.message && errors.message}
+          />
+          <ErrorMessage component={Error} name='message' />
+        </InputField>
+        {/* {values.name &&
+          values.email &&
+          values.message &&
+          process.env.NODE_ENV !== "development" && (
+            <InputField>
+              <FastField
+                component={Recaptcha}
+                sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
+                name='recaptcha'
+                onChange={(value) => setFieldValue("recaptcha", value)}
+              />
+              <ErrorMessage component={Error} name='recaptcha' />
+            </InputField>
+          )} */}
+        {values.success && (
+          <InputField>
+            <Center>
+              <h4>
+                Your message has been successfully sent, I will get back to you
+                ASAP!
+              </h4>
+            </Center>
+          </InputField>
+        )}
+        <Center>
+          <Button type='submit' disabled={isSubmitting}>
+            Submit
+          </Button>
+        </Center>
+      </Form>
+    )}
+  </Formik>
 );
 
 export default ContactForm;
