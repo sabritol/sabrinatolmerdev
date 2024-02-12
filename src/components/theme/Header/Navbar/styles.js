@@ -8,14 +8,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  color: lightgray;
-  text-shadow: 1px 1px 0 hsl(180, 100%, 30%);
-  -webkit-text-stroke: 0.5px #009999;
-
+  color: rgb(191, 65, 52);
+  text-shadow: 0.3px 4px 0 hsl(180, 100%, 30%);
+  -webkit-text-stroke: 0.1px rgb(191, 65, 52);
+  font-size: 30px;
   :hover {
-  }
-
-  @media (max-width: 960px) {
-    color: white;
   }
 `;

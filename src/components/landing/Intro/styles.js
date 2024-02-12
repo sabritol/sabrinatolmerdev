@@ -65,26 +65,19 @@ export const Details = styled.div`
 
   h1 {
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    font-size: 95pt;
+    font-size: 160pt;
     letter-spacing: -2px;
     font-weight: bold;
     color: ${({ theme }) => (theme === "light" ? "#43424a" : "#dedaf2")};
     text-shadow: 10px 10px 0 hsl(180, 100%, 30%);
     -webkit-text-stroke: 5px #5457a0;
 
-    @media (max-width: 960px) {
-      margin-top: 8rem;
-    }
-
     @media (max-width: 680px) {
       -webkit-text-stroke: 6px #bf4134;
       font-size: 60px;
       margin-bottom: 4rem;
-      margin-top: -3rem;
       line-height: 1.8rem;
       text-align: center;
-      margin-left: 11px;
       line-height: 80px;
     }
   }
@@ -116,7 +109,7 @@ export const Thumbnail = styled.div`
   flex: 1;
 
   img.satelite-animated {
-    animation: ${animatedNasa} 20s ease infinite;
+    animation: ${animatedNasa} 6s ease infinite;
     height: 405px;
     width: 350px;
     top: 350px;
@@ -126,18 +119,15 @@ export const Thumbnail = styled.div`
     position: absolute;
     border: none;
 
-    //TODO: change the parameters tobe responsive
     @media (max-width: 960px) {
-      width: 140%;
-      height: 180px;
+      max-width: 280px;
+      max-height: 200px;
     }
 
     @media (max-width: 680px) {
-      width: 42%;
-      top: 1rem;
-      margin-bottom: 1rem;
-      position: relative;
-      margin-left: 50px;
+      max-width: 50%;
+      top: 50%;
+      right: 20%;
     }
   }
 `;

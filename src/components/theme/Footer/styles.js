@@ -50,6 +50,9 @@ export const Details = styled.div`
   span {
     color: #212121;
   }
+  h4 {
+    margin-top: 24px;
+  }
 
   @media (max-width: 680px) {
     margin-bottom: 2rem;
