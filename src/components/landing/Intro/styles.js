@@ -73,7 +73,8 @@ export const Details = styled.div`
     -webkit-text-stroke: 5px #5457a0;
 
     @media (max-width: 680px) {
-      -webkit-text-stroke: 6px #bf4134;
+      /* -webkit-text-stroke: 4px #bf4134; */
+      color: #bf4134;
       font-size: 60px;
       margin-bottom: 4rem;
       line-height: 1.8rem;

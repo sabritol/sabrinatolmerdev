@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
 				    -webkit-text-stroke: 1px #008080;
 
 
-					margin-right: 1rem;
+					 margin-right: 1rem;
 
 					&:last-child {
 							margin-right: unset;
