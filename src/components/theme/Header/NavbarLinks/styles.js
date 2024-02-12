@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   a {
-    color: rgb(0, 153, 153);
+    color: rgb(191, 65, 52);
     text-decoration: none;
+    font-weight: 800;
 
     @media (max-width: 960px) {
       /* color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")}; */
@@ -21,7 +22,9 @@ export const Wrapper = styled.div`
 					display: none;
 			}
 
-			a {     color: darkgrey;
+			a {     
+				color: rgb(0, 153, 153) 
+			
 				    -webkit-text-stroke: 1px #008080;
 
 
@@ -31,8 +34,8 @@ export const Wrapper = styled.div`
 							margin-right: unset;
 					}
 					&:hover {
-						color: lightgray;
-						text-shadow: 4px 4px 0 #bf4134;
+						  color: lightgray;
+						 text-shadow: 4px 4px 0 #bf4134;
 						-webkit-text-stroke: 1px #008080;
   }
 			}
