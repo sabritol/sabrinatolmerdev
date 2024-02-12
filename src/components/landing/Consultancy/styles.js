@@ -8,21 +8,17 @@ export const Wrapper = styled.div`
 `;
 
 export const ConsultancyWrapper = styled.div`
-  /* position: relative; */
-
-  /* display: flex; */
   align-items: center;
-
   min-height: auto;
   align-items: center;
-  /* justify-content: space-between; */
 
   p {
     color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
   }
+
   @media (max-width: 960px) {
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding: 4rem 0;
   }
 `;
