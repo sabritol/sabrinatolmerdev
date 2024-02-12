@@ -14,8 +14,4 @@ export const Brand = styled.a`
 
   :hover {
   }
-
-  @media (max-width: 960px) {
-    color: white;
-  }
 `;
