@@ -2,16 +2,42 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import satelite from "../../../assets/illustrations/nasa.svg";
 
+// const animatedNasa = keyframes`
+// 0%, 100% {
+//     background-position: 0 0;
+//     transform: translate(0, 0) rotate(0deg); /* Start and end at the same position, no rotation, ensuring a smooth loop */
+//   }
+//   25% {
+//     background-position: 25% 25%;
+//     transform: translate(-25%, -10px) rotate(45deg); /* Move left and up slightly, and rotate */
+//   }
+//   50% {
+//     background-position: 50% 50%;
+//     transform: translate(-50%, 0) rotate(90deg); /* Continue moving left to the middle, back to vertical center, rotated further */
+//   }
+//   75% {
+//     background-position: 75% 75%;
+//     transform: translate(-75%, 10px) rotate(135deg); /* Move further left and down slightly, and rotate more */
+//   }
+// `;
+
 const animatedNasa = keyframes`
-0% {
-        background-position: 0 0;
-      }
-      50% {
-        background-position: 0 100%;
-      }
-      100% {
-        background-position: 0 0;
-      }
+0%, 100% {
+    background-position: 0 0;
+    transform: translate(0, 0) rotate(0deg); /* Start and end at the same position and rotation for a smooth loop */
+  }
+  25% {
+    background-position: 0 25%;
+    transform: translate(30%, -10px) rotate(45deg); /* Move more to the right and up slightly, and rotate */
+  }
+  50% {
+    background-position: 0 50%;
+    transform: translate(60%, 0) rotate(90deg); /* Move even further right to the middle, back to vertical center, rotated further */
+  }
+  75% {
+    background-position: 0 75%;
+    transform: translate(30%, 10px) rotate(135deg); /* Move back towards the starting point on the right and down slightly, and rotate more */
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -129,10 +155,11 @@ export const Thumbnail = styled.div`
   flex: 1;
 
   img.satelite-animated {
-    animation: ${animatedNasa} 6s ease infinite;
+    animation: ${animatedNasa} 17s ease infinite;
+    /* animation: ${animatedNasa} 6s ease infinite; */
     height: 405px;
     width: 350px;
-    top: 350px;
+    top: 500px;
     margin-left: 50%;
     background-image: url(${satelite});
     background-repeat: no-repeat;
@@ -147,7 +174,7 @@ export const Thumbnail = styled.div`
     @media (max-width: 680px) {
       max-width: 50%;
       top: 50%;
-      right: 20%;
+      right: 40%;
     }
   }
 `;

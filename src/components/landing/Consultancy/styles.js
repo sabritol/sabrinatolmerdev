@@ -11,16 +11,11 @@ export const ConsultancyWrapper = styled.div`
   align-items: center;
   min-height: auto;
   align-items: center;
-  /* margin-top: auto; */
 
-  /* p {
-    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
-  } */
   @media (max-width: 960px) {
     flex-direction: column;
     margin-top: 1rem;
     padding: 4rem 0;
-    /* margin-top: 10rem; */
   }
 `;
 
@@ -131,7 +126,6 @@ export const TextWrapper = styled.div`
   margin-top: 4%;
   box-sizing: border-box;
   border: 2px solid black;
-  /* border: 10mm ridge rgba(84, 87, 160, 0.5); */
   width: 100%;
   flex-direction: column;
   display: flex;
