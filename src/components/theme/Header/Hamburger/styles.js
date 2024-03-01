@@ -34,7 +34,8 @@ export const Bar = styled.div`
   width: 1.8rem;
   height: 0.2rem;
   margin-bottom: 0.3rem;
-  background-color: rgb(0, 153, 153);
+  background-color: #f2f1e3;
+  margin-top: 5px;
   transition:
     transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
     opacity 500ms,
