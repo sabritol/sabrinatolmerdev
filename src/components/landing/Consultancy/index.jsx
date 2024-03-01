@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { Container } from "components/common";
 // import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
 import { Details } from "../Skills/styles";
-import { Wrapper, ConsultancyWrapper, TextlWrapper } from "./styles";
+import { Wrapper, ConsultancyWrapper, TextWrapper } from "./styles";
 import { ThemeContext } from "providers/ThemeProvider";
 
 export const Consultancy = () => {
@@ -14,8 +14,8 @@ export const Consultancy = () => {
     <Wrapper id='consultancy'>
       <ConsultancyWrapper as={Container}>
         <Details theme={theme}>
-          <h2> React Development</h2>
-          <TextlWrapper theme={theme}>
+          <h2> React Consultancy</h2>
+          <TextWrapper theme={theme}>
             <div style={{ padding: "14px" }}>
               <p>
                 With in-depth knowledge of React and its ecosystem, I offer
@@ -43,7 +43,7 @@ export const Consultancy = () => {
                 your project requirements and how we can achieve them together!
               </p>
             </div>
-          </TextlWrapper>
+          </TextWrapper>
         </Details>
       </ConsultancyWrapper>
     </Wrapper>

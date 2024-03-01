@@ -603,7 +603,7 @@ export const Global = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
-      color: ${({ theme }) => (theme === "light" ? "hsla(0, 0%, 0%, 0.8)" : "#e7e4d8")};
+      color: ${({ theme }) => (theme === "light" ? "#e7e4d8" : "#e7e4d8")};
       background-color: ${({ theme }) => (theme === "light" ? "#e7e4d8" : "#212121")};
       transition: .3s all;
       font-weight: normal;
