@@ -6,15 +6,8 @@ export const Wrapper = styled.div`
     text-decoration: none;
     font-weight: 900;
     font-size: 24px;
-
-    color: #bf4134;
-    /* text-shadow: 4px 4px 0 #bf4134; */
-    -webkit-text-stroke: 1.3px #008080;
-
-    @media (max-width: 960px) {
-      /* color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")}; */
-      /* color: red; */
-    }
+    text-shadow: 2px 2px 0 #bf4134;
+    -webkit-text-stroke: 1px #bf4134;
   }
 
   ${({ desktop }) =>
@@ -39,9 +32,9 @@ export const Wrapper = styled.div`
 							margin-right: unset;
 					}
 					&:hover {
-						  color: lightgray;
+						
 						 text-shadow: 4px 4px 0 #bf4134;
-						-webkit-text-stroke: 1px #008080;
+						-webkit-text-stroke: 1px #bf4134;
   }
 			}
 		`

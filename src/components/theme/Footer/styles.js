@@ -48,13 +48,9 @@ export const Details = styled.div`
   h4,
   a,
   span {
-    color: #212121;
+    color: #e7e4d8;
   }
   h4 {
     margin-top: 24px;
-  }
-
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
   }
 `;

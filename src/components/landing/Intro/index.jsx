@@ -25,10 +25,6 @@ export const Intro = () => {
               alt='satelite'
             />
           </Thumbnail>
-
-          {/* <Button className='intro-btn' as={AnchorLink} href='#contact'>
-            Let's have a chat
-          </Button> */}
           <SocialLinks />
         </Details>
 

@@ -9,10 +9,6 @@ export const Wrapper = styled.div`
 
 export const Brand = styled.a`
   color: #f2f1e3;
-  /* -webkit-text-stroke: 1px black;
-  text-shadow: 0.3px 4px #f2f1e3; */
-  /* -webkit-text-stroke: 0.1px rgb(191, 65, 52); */
+  text-shadow: 2px 2px 0 #bf4134;
   font-size: 30px;
-  :hover {
-  }
 `;
