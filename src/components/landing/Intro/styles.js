@@ -65,16 +65,35 @@ export const Details = styled.div`
 
   h1 {
     text-transform: uppercase;
-    font-size: 160pt;
-    letter-spacing: -2px;
-    font-weight: bold;
-    color: ${({ theme }) => (theme === "light" ? "#43424a" : "#dedaf2")};
-    text-shadow: 10px 10px 0 hsl(180, 100%, 30%);
-    -webkit-text-stroke: 5px #5457a0;
+    font-size: 200px;
+    /* letter-spacing: -2px; */
+    font-weight: 990;
+    color: #eea3b7;
+    /* color: ${({ theme }) => (theme === "light" ? "#43424a" : "#dedaf2")}; */
+    /* text-shadow:
+      10px 10px 0 #bc4d28,
+      10px 10px 0 red; */
+    text-shadow:
+      4px 4px 0 #ba5b45,
+      4.8px 4.8px 0 #000,
+      3px 3px 0 #000,
+      4.8px 3px 0 #000,
+      3px 4.8px 0 #000,
+      8px 8px 0 #dbbb83,
+      9px 9px #000,
+      7px 7px #000,
+      7px 9px #000,
+      9px 7px #000,
+      12px 12px #ece99c,
+      13px 13px #000,
+      11px 11px #000,
+      13px 11px #000,
+      11px 13px #000;
+    -webkit-text-stroke: 2px black;
 
     @media (max-width: 680px) {
       /* -webkit-text-stroke: 4px #bf4134; */
-      color: #bf4134;
+      /* color: #bf4134; */
       font-size: 60px;
       margin-bottom: 4rem;
       line-height: 1.8rem;

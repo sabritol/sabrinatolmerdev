@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   a {
-    color: rgb(191, 65, 52);
+    color: #f2f1e3;
     text-decoration: none;
     font-weight: 800;
 

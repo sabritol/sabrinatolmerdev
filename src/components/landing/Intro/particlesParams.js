@@ -13,13 +13,13 @@ export const options = {
       },
     },
     color: {
-      value: "#5457a0",
+      value: "#ba5b45",
     },
     shape: {
       type: "node",
       stroke: {
         width: -12,
-        color: "#000000",
+        color: "#ba5b45",
       },
       polygon: {
         nb_sides: 4,
@@ -53,7 +53,7 @@ export const options = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#5457a0",
+      color: "#ba5b45",
       opacity: 1,
       width: 1,
     },
