@@ -18,7 +18,7 @@ export const ConsultancyWrapper = styled.div`
   } */
   @media (max-width: 960px) {
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding: 4rem 0;
     /* margin-top: 10rem; */
   }

@@ -68,6 +68,6 @@ export const Bar = styled.div`
     sidebar &&
     `
 			background-color: ${theme === "light" ? "#212121" : "rgb(0, 153, 153) "};
-			transform: translateY(-6px) rotate(-45deg);
+			transform: translateY(-6px) rotate(-40deg);
 	`}
 `;

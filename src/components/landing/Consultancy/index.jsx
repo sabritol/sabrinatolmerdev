@@ -18,29 +18,27 @@ export const Consultancy = () => {
           <TextWrapper theme={theme}>
             <div style={{ padding: "14px" }}>
               <p>
-                With in-depth knowledge of React and its ecosystem, I offer
-                specialized solutions to enhance your digital presence. My
-                services include:
+                - With in-depth knowledge of React and its ecosystem, I offer
+                specialized solutions to enhance your digital presence.
               </p>
               <p>
-                <strong> ✨ Custom Development</strong> Building dynamic,
+                <strong> 🚀 Custom Development.</strong> Building dynamic,
                 responsive user interfaces with React, customized to meet your
                 specific needs.
               </p>
               <p>
-                <strong> ✨ Code Optimization</strong> Improving the performance
-                and scalability of your existing React applications.
+                <strong> 🔧 Code Optimization.</strong> Improving the
+                performance and scalability of your existing React applications.
               </p>
               <p>
-                <strong> ✨ Technical Guidance</strong> Advising on best
+                <strong> 🔮 Technical Guidance.</strong> Advising on best
                 practices, architecture, and integrating advanced tools for
                 optimal results.
               </p>
               <p>
                 Partner with me to navigate the complexities of web development
                 with ease. Transform your concepts into impactful digital
-                experiences using React's robust features! Reach out to discuss
-                your project requirements and how we can achieve them together!
+                experiences! Reach out to discuss your project requirements.
               </p>
             </div>
           </TextWrapper>
