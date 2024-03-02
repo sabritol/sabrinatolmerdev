@@ -151,7 +151,7 @@ export const TextWrapper = styled.div`
   p {
     color: white;
     @media (max-width: 680px) {
-      color: red;
+      color: white !important;
     }
   }
   h2 {
