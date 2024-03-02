@@ -48,8 +48,8 @@ const projects = [
   },
   {
     url: "https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    title: "Quisque vitae tellus facilisis",
-    text: "Mauris ornare mattis eros vitae iaculis. Fusce blandit eget enim eu tempor. Donec in risus nec augue pharetra ornare. Phasellus dignissim mi eu nulla malesuada bibendum.",
+    title: "Art installations",
+    text: "I have created various site-specific works, designed to interact with their surroundings and provide an immersive experience to the viewers.",
   },
 ];
 

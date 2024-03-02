@@ -149,7 +149,10 @@ export const TextWrapper = styled.div`
     11px 13px #000;
 
   p {
-    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+    color: white;
+    @media (max-width: 680px) {
+      color: red;
+    }
   }
   h2 {
     text-transform: uppercase;

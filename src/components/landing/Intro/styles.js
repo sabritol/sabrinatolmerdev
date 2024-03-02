@@ -92,13 +92,8 @@ export const Details = styled.div`
   h1 {
     text-transform: uppercase;
     font-size: 200px;
-    /* letter-spacing: -2px; */
     font-weight: 990;
     color: #eea3b7;
-    /* color: ${({ theme }) => (theme === "light" ? "#43424a" : "#dedaf2")}; */
-    /* text-shadow:
-      10px 10px 0 #bc4d28,
-      10px 10px 0 red; */
     text-shadow:
       4px 4px 0 #ba5b45,
       4.8px 4.8px 0 #000,
@@ -118,8 +113,6 @@ export const Details = styled.div`
     -webkit-text-stroke: 2px black;
 
     @media (max-width: 680px) {
-      /* -webkit-text-stroke: 4px #bf4134; */
-      /* color: #bf4134; */
       font-size: 60px;
       margin-bottom: 4rem;
       line-height: 1.8rem;
@@ -156,7 +149,6 @@ export const Thumbnail = styled.div`
 
   img.satelite-animated {
     animation: ${animatedNasa} 17s ease infinite;
-    /* animation: ${animatedNasa} 6s ease infinite; */
     height: 405px;
     width: 350px;
     top: 500px;
@@ -173,8 +165,8 @@ export const Thumbnail = styled.div`
 
     @media (max-width: 680px) {
       max-width: 50%;
-      top: 50%;
-      right: 40%;
+      top: 55%;
+      right: 30%;
     }
   }
 `;

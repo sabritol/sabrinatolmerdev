@@ -18,7 +18,7 @@ export const Consultancy = () => {
           <TextWrapper theme={theme}>
             <div style={{ padding: "14px" }}>
               <p>
-                - With in-depth knowledge of React and its ecosystem, I offer
+                With in-depth knowledge of React and its ecosystem, I offer
                 specialized solutions to enhance your digital presence.
               </p>
               <p>
