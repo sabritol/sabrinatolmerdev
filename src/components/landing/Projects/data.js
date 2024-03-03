@@ -38,11 +38,12 @@ const projects = [
       "As a choreographer, I was especially motivated by the possibility of augmenting the actual stage, which opened a door to reinvent and rediscover choreographic composition.",
       "To achieve the final piece we used: Resolume Arena to run the loops and synchronize the mapping on location; Processing for prototype our visual scene components and Unity3D for a more robust design and integration.",
     ],
+    linkUrl: "https://www.youtube.com/watch?v=lI7EVzY12z4",
   },
   {
     url: hori,
     title: "Singularity",
-    text: "Integer at hendrerit odio. Quisque non enim tellus. Etiam commodo quam quis eleifend ullamcorper.",
+    text: "Scenic research laboratory, focused on human interaction with digital interfaces.",
   },
   {
     url: neuronal,
