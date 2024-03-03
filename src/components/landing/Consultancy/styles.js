@@ -122,6 +122,7 @@ export const ConsultancyWrapper = styled.div`
 // `;
 
 export const TextWrapper = styled.div`
+  padding: 40px;
   border-radius: 10px;
   margin-top: 4%;
   box-sizing: border-box;
@@ -130,7 +131,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   display: flex;
   justify-content: center;
-  background-color: rgba(238, 163, 183, 0.5);
+  background: rgba(238, 163, 183, 0.5);
   box-shadow:
     4px 4px 0 #ba5b45,
     4.8px 4.8px 0 #000,
@@ -148,15 +149,36 @@ export const TextWrapper = styled.div`
     13px 11px #000,
     11px 13px #000;
 
-  p {
+  /* p {
     color: white;
     @media (max-width: 680px) {
       color: white !important;
     }
-  }
+  } */
   h2 {
     text-transform: uppercase;
-    font-size: 20pt;
-    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+    margin-bottom: 2rem;
+    margin-top: 50px;
+    left: 7rem;
+    font-size: 26pt;
+    color: ${({ theme }) => (theme === "dark" ? "red" : "#212121")};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
+    }
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+    font-size: 17pt;
+    font-weight: normal;
+    line-height: 1.3;
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
+    }
   }
 `;
