@@ -129,23 +129,30 @@ export const Projects = () => {
                       </Typography>
                       {cards[i].text}
                       <Items>
-                        <a
-                          aria-label='Link'
-                          href={cards[i].repoUrl}
-                          target='_blank'
-                        >
-                          <img
-                            src={LinkIcon}
-                            width='24'
-                            alt='Project Website'
-                          />
-                        </a>
+                        {cards[i].linkUrl && (
+                          <a
+                            aria-label='Link'
+                            href={cards[i].linkUrl}
+                            target='_blank'
+                            rel='noopener noreferrer' // Always use rel="noopener noreferrer" with target='_blank' for security reasons
+                          >
+                            <img
+                              src={LinkIcon}
+                              width='24'
+                              alt='Project Website'
+                            />
+                          </a>
+                        )}
 
-                        <div>
-                          <a href={cards[i].repoUrl} target='_blank'>
+                        {cards[i].gitUrl && (
+                          <a
+                            href={cards[i].gitUrl}
+                            target='_blank'
+                            rel='noopener noreferrer' // Always use rel="noopener noreferrer" with target='_blank' for security reasons
+                          >
                             <img src={GithubIcon} width='24' alt='Github' />
                           </a>
-                        </div>
+                        )}
                       </Items>
                     </AnimatedBox>
                   </TextWrapper>

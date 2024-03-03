@@ -13,9 +13,9 @@ export const Consultancy = () => {
   return (
     <Wrapper id='consultancy'>
       <ConsultancyWrapper as={Container}>
-        <Details theme={theme}>
+        <Details>
           <h2> React Consultancy</h2>
-          <TextWrapper theme={theme}>
+          <TextWrapper>
             <div style={{ padding: "14px" }}>
               <p>
                 With in-depth knowledge of React and its ecosystem, I offer

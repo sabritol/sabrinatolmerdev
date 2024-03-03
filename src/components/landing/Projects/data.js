@@ -22,19 +22,21 @@ const projects = [
     url: caro,
     title: "Yoga Brand",
     text: "The goal with this project was to build a dynamic landing page with full SEO indexing and content management system.",
+    gitUrl: "https://github.com/sabritol/bodymeeting",
+    linkUrl: "https://carolinasambado.netlify.app/",
   },
   {
     url: food,
     title: "Food Fiction",
     text: "Condimentum leo, vel fermentum massa pulvinar vitae. Nam a felis libero. Fusce pellentesque dignissim finibus. Nulla hendrerit vulputate nisl, nec aliquam elit mollis eu.",
+    linkUrl: "https://sharp-goodall-281046.netlify.app/",
   },
   {
     url: instante,
     title: "Instant of Singularity",
     text: [
-      "An immersive experience that combines original music, dance performances, visual projections and also fragrances: seven minutes of singularity set on a futuristic landscape filled with magical realism. ",
       "As a choreographer, I was especially motivated by the possibility of augmenting the actual stage, which opened a door to reinvent and rediscover choreographic composition.",
-      "To achieve the final piece we used several different techniques and platforms: Resolume Arena to run the loops and synchronize the mapping on location; Processing for prototype our visual scene components and Unity3D for a more robust design and integration.",
+      "To achieve the final piece we used: Resolume Arena to run the loops and synchronize the mapping on location; Processing for prototype our visual scene components and Unity3D for a more robust design and integration.",
     ],
   },
   {
@@ -45,7 +47,8 @@ const projects = [
   {
     url: neuronal,
     title: "Transfer Style",
-    text: "usce auctor, risus eget laoreet dictum, justo odio venenatis quam, et porta tellus ante ac purus.",
+    text: "An adapted  neuronal network for style transfer in dance performance.",
+    gitUrl: "https://github.com/sabritol/Neuronal-Transfer-Style-",
   },
   {
     url: "https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
