@@ -1,25 +1,20 @@
 import React, { useState, useContext } from "react";
-import { ThemeContext } from 'providers/ThemeProvider';
+import { ThemeContext } from "providers/ThemeProvider";
 
 import { animated, useSprings } from "react-spring";
 
 import styled from "styled-components";
 
-import { Wrapper, Thumbnail } from './styles';
+import { Wrapper, Thumbnail } from "./styles";
 
-import {
-  Box,
-  Container,
-  Typography,
-  Flex,
-  Grid,
-} from "./components/index.js";
+import { Box, Container, Typography, Flex, Grid } from "./components/index.js";
 
 import "./components/molecules/global-styles/global-styles.css";
-// import LinkIcon from "../../../assets/icons/link.svg";
-// import GithubIcon from "../../../assets/icons/github.svg";
+import LinkIcon from "../../../assets/icons/link.svg";
+import GithubIcon from "../../../assets/icons/github.svg";
 
 import cards from "./data.js";
+import { Items } from "../../common/SocialLinks/styles.js";
 
 const GridContainer = styled(Grid)``;
 GridContainer.defaultProps = {
@@ -27,9 +22,9 @@ GridContainer.defaultProps = {
     "repeat(1, 1fr)",
     null,
     "repeat(2, 1fr)",
-    "repeat(4, 1fr)"
+    "repeat(4, 1fr)",
   ],
-  gridGap: [1, null, 2]
+  gridGap: [1, null, 2],
 };
 
 const AnimatedItem = styled(animated(Flex))`
@@ -43,12 +38,12 @@ AnimatedItem.defaultProps = {
   justifyContent: "space-evenly",
   alignItems: "center",
   flexDirection: "column",
-  height: [300, null, 450]
+  height: [300, null, 450],
 };
 
 const TitleWrapper = styled(animated(Flex))``;
-TitleWrapper.defaultProps = { 
-  color:  "#858484",
+TitleWrapper.defaultProps = {
+  color: "#858484",
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
@@ -56,7 +51,7 @@ TitleWrapper.defaultProps = {
   height: "100%",
   p: [1, null, 2],
   background: "rgba(0,0,0,0.8)",
-  fontSize: [4, null, 5]
+  fontSize: [4, null, 5],
 };
 
 const TextWrapper = styled(animated(Flex))`
@@ -68,7 +63,7 @@ TextWrapper.defaultProps = {
   textAlign: "center",
   height: "100%",
   background: "#fff",
-  fontSize: 1
+  fontSize: 1,
 };
 
 const AnimatedBox = styled(animated(Box))``;
@@ -94,17 +89,17 @@ export const Projects = () => {
         transform: "translateY(100px)",
         overlayOpacity: 1,
         textOpacity: 0,
-        textHeight: "0%"
-	}
-}))
-);
+        textHeight: "0%",
+      },
+    }))
+  );
 
   return (
-  <Wrapper as={Container} id="projects">
-    <Thumbnail theme={theme}>
-    <h2>Projects</h2>
-    </Thumbnail>
-      <Box theme={theme} bg="bg100" minHeight="100vh" pt={1} pb={12}>
+    <Wrapper as={Container} id='projects'>
+      <Thumbnail theme={theme}>
+        <h2>Projects</h2>
+      </Thumbnail>
+      <Box theme={theme} bg='bg100' minHeight='100vh' pt={1} pb={12}>
         <Container>
           <GridContainer>
             {springs.map(
@@ -133,24 +128,25 @@ export const Projects = () => {
                         {cards[i].title}
                       </Typography>
                       {cards[i].text}
-                      {/* <Actions>
-                        <div className="links">
-                            {this.props.project.url &&
-                                <div>
-                                    <a aria-label="Link" href={this.props.project.url} target="_blank">
-                                        <img src={LinkIcon} width="24" alt="Project Website" />
-                                    </a>
-                                </div>
-                            }
-                            {this.props.project.repoUrl &&
-                                <div>
-                                    <a href={this.props.project.repoUrl} target="_blank">
-                                        <img src={GithubIcon} width="24" alt="Github" />
-                                    </a>
-                                </div>
-                            }
+                      <Items>
+                        <a
+                          aria-label='Link'
+                          href={cards[i].repoUrl}
+                          target='_blank'
+                        >
+                          <img
+                            src={LinkIcon}
+                            width='24'
+                            alt='Project Website'
+                          />
+                        </a>
+
+                        <div>
+                          <a href={cards[i].repoUrl} target='_blank'>
+                            <img src={GithubIcon} width='24' alt='Github' />
+                          </a>
                         </div>
-                    </Actions> */}
+                      </Items>
                     </AnimatedBox>
                   </TextWrapper>
                 </AnimatedItem>
@@ -159,7 +155,6 @@ export const Projects = () => {
           </GridContainer>
         </Container>
       </Box>
- </Wrapper>
+    </Wrapper>
   );
 };
-

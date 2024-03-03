@@ -11,6 +11,7 @@ const projects = [
     url: jely,
     title: "Jellyfish Generator",
     text: "A simple, playable game that served as the interactive backdrop for the Jellyfish party, an periodic live event hosted at the Valparaiso Boat in Amsterdam.",
+    repoUrl: "https://www.instagram.com/?hl=es",
   },
   {
     url: human,

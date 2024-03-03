@@ -18,12 +18,6 @@
     "icon": "/icons/linkedin.svg"
   },
   {
-    "id": 3,
-    "name": "Twitter",
-    "link": "https://twitter.com/iamwayra",
-    "icon": "/icons/twitter.svg"
-  },
-  {
     "id": 4,
     "name": "Stackoverflow",
     "link": "https://stackoverflow.com/users/10780941/sabrina-tolmer",

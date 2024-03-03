@@ -35,6 +35,7 @@ export const Bar = styled.div`
   height: 0.2rem;
   margin-bottom: 0.3rem;
   background-color: #f2f1e3;
+  box-shadow: 2px 2px 0 #bf4134;
   margin-top: 5px;
   transition:
     transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
@@ -51,8 +52,8 @@ export const Bar = styled.div`
     sidebar &&
     `
 		
-		background-color: ${theme === "light" ? "#212121" : "rgb(0, 153, 153) "};
-		transform: translateY(8px) rotate(-135deg);
+		background-color: #f2f1e3;
+		transform: translateY(8px) rotate(-140deg);
 		
 	`}
 
@@ -67,7 +68,7 @@ export const Bar = styled.div`
     bottom &&
     sidebar &&
     `
-			background-color: ${theme === "light" ? "#212121" : "rgb(0, 153, 153) "};
-			transform: translateY(-6px) rotate(-40deg);
+				background-color: #f2f1e3;
+			transform: translateY(-6px) rotate(-35deg);
 	`}
 `;

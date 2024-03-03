@@ -4,6 +4,7 @@ export const Items = styled.div`
   display: flex;
   align-items: center;
   margin-left: 8px;
+  margin-top: 2rem;
 
   a {
     margin: 0 0.5rem;

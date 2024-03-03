@@ -14,7 +14,6 @@ export const Footer = () => (
           Best {new Date().getFullYear()} | Made with Gatsby
           <br></br>
           <span aria-label='love' role='img'>
-            💖
             <Links></Links>
           </span>
         </span>

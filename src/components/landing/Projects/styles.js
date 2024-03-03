@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+export const Actions = styled.div;
 export const Wrapper = styled.div`
   padding: 2rem 0;
 `;
