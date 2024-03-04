@@ -22,7 +22,7 @@ export const Thumbnail = styled.div`
     font-size: 26pt;
     margin-left: 50px;
     padding: 3px;
-    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
+    color: #faebd7;
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) =>
