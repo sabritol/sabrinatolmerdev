@@ -16,36 +16,37 @@ export const Consultancy = () => {
   return (
     <Wrapper id='consultancy'>
       <ConsultancyWrapper as={Container}>
-        <Details theme={theme}>
-          <h2> React Consultancy</h2>
-          <TextWrapper theme={theme}>
-            <Paragraph theme={theme}>
-              With in-depth knowledge of React and its ecosystem, I offer
-              specialized solutions to enhance your digital presence.
-            </Paragraph>
-            <p>
-              <strong> 🚀 Custom Development.</strong> Building dynamic,
-              responsive user interfaces with React, customized to meet your
-              specific needs.
-            </p>
-            <p>
-              <strong> 🔧 Code Optimization.</strong> Improving the performance
-              and scalability of your existing React applications.
-            </p>
-            <p>
-              <strong> 🔮 Technical Guidance.</strong> Advising on best
-              practices, architecture, and integrating advanced tools for
-              optimal results.
-            </p>
-            <p>
-              Partner with me to navigate the complexities of web development
-              with ease. Transform your concepts into impactful digital
-              experiences! Reach out to discuss your project requirements.
-            </p>
+        <TextWrapper theme={theme}>
+          <Paragraph theme={theme}>
+            Helping personal brands stay organized and creative with Notion,
+            project management, and a developer’s eye.
+          </Paragraph>
+          <strong> 🚀 Application Development</strong>
+          <br></br>
+          <p>
+            I support agile workflows, monitor pull requests, and step in as
+            Scrum Master when needed. Let’s connect if you're looking for
+            thoughtful leadership and smooth execution.
+          </p>
 
-            <Button onClick={handleResumeClick}>See my Resume</Button>
-          </TextWrapper>
-        </Details>
+          <p>
+            <strong>
+              🏐 I’m a Virtual Executive Assistant and Project Manager
+            </strong>{" "}
+            <br></br>
+            <p>
+              with a background in front-end development, photography and
+              advertising.
+            </p>
+          </p>
+          <p>
+            I bring technical understanding, creative sensitivity, and calm
+            organization to every project.
+          </p>
+          <p>Let’s connect and see how I can support your work.</p>
+          <br></br>
+          <Button onClick={handleResumeClick}>See my Resume</Button>
+        </TextWrapper>
       </ConsultancyWrapper>
     </Wrapper>
   );
