@@ -7,11 +7,11 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <br></br>
-        <h4>Sabrina Tolmer</h4>
+        <h1>Sabrina Tolmer</h1>
         <SocialLinks />
         <br></br>
         <span>
-          Best {new Date().getFullYear()} | Made with Gatsby
+          Best {new Date().getFullYear()}
           <br></br>
           <span aria-label='love' role='img'>
             <Links></Links>

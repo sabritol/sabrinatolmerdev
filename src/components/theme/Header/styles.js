@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import header from "../../../assets/illustrations/header.svg";
 
 export const Wrapper = styled.div`
-  background: #eea3b7;
+  background: rgba(103, 156, 199, 0.5);
+
   width: 100%;
 `;
 
