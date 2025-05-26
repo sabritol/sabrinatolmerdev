@@ -1,16 +1,12 @@
 import React, { useContext } from "react";
-// import { PDFDownloadLink } from "@react-pdf/renderer";
-// import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Container, Button } from "components/common";
-// import Sabrina from "../../../assets/illustrations/sabrina.jpeg";
-import { Details } from "../Skills/styles";
 import { Wrapper, ConsultancyWrapper, TextWrapper, Paragraph } from "./styles";
 import { ThemeContext } from "providers/ThemeProvider";
 
 export const Consultancy = () => {
   const { theme } = useContext(ThemeContext);
   const handleResumeClick = () => {
-    const resumePdfUrl = "/resume.pdf";
+    const resumePdfUrl = "/resume1.pdf";
     window.open(resumePdfUrl, "_blank");
   };
   return (
