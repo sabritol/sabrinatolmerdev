@@ -6,7 +6,7 @@ import { ThemeContext } from "providers/ThemeProvider";
 export const Consultancy = () => {
   const { theme } = useContext(ThemeContext);
   const handleResumeClick = () => {
-    const resumePdfUrl = "/resume1.pdf";
+    const resumePdfUrl = "/sabrinatolmercv.pdf";
     window.open(resumePdfUrl, "_blank");
   };
   return (
