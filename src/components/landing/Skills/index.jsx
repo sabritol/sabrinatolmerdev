@@ -34,9 +34,8 @@ export const Skills = () => {
             collaborative, and focused on long-term clarity and consistency.
           </p>
           <p>
-            I’m not attached to titles—my goal is simply to contribute where I
-            bring the most value and help teams stay aligned, focused, and
-            efficient.
+            My goal is simply to contribute where I bring the most value and
+            help teams stay aligned, focused, and efficient.
           </p>
           <p />
           <a

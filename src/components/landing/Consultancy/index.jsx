@@ -15,32 +15,28 @@ export const Consultancy = () => {
       <ConsultancyWrapper as={Container}>
         <TextWrapper theme={theme}>
           <Paragraph theme={theme}>
-            Helping personal brands stay organized and creative with Notion,
-            project management, and a developer’s eye.
+            I can support you with Project Management, React Development, and
+            Technical Strategy
           </Paragraph>
-          <strong> 🚀 Application Development</strong>
-          <br></br>
-          <p>
-            I support agile workflows, monitor pull requests, and step in as
-            Scrum Master when needed. Let’s connect if you're looking for
-            thoughtful leadership and smooth execution.
-          </p>
+          <Paragraph theme={theme}>
+            With a strong foundation in modern web technologies, development
+            pipelines, and collaborative tooling, I offer hands-on support
+            across the software lifecycle. I’m experienced in Agile workflows,
+            monitoring pull requests, coordinating sprints, and stepping in as a
+            Scrum Master when needed.
+          </Paragraph>
+          <Paragraph theme={theme}>
+            Thanks to my diverse background across IT, design, and creative
+            tech, I can recognize emerging technological trends early and help
+            teams make informed, future-proof decisions. Whether you're building
+            a product or aligning cross-functional teams, I bring structure,
+            calm organization, and a technical mindset to the table.
+          </Paragraph>
+          <Paragraph theme={theme}>
+            If you're looking for a reliable collaborator to strengthen your
+            development processes or project execution, let’s connect.{" "}
+          </Paragraph>
 
-          <p>
-            <strong>
-              🏐 I’m a Virtual Executive Assistant and Project Manager
-            </strong>{" "}
-            <br></br>
-            <p>
-              with a background in front-end development, photography and
-              advertising.
-            </p>
-          </p>
-          <p>
-            I bring technical understanding, creative sensitivity, and calm
-            organization to every project.
-          </p>
-          <p>Let’s connect and see how I can support your work.</p>
           <br></br>
           <Button onClick={handleResumeClick}>See my Resume</Button>
         </TextWrapper>
