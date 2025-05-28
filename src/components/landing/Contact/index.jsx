@@ -1,17 +1,21 @@
 import React from "react";
-import { Container } from "components/common";
-import constela from "assets/illustrations/constela.svg";
+import { Container, Button } from "components/common";
 import { Wrapper, Details, Thumbnail } from "./styles";
-import ContactForm from "./ContactForm";
 
 export const Contact = () => (
   <Wrapper as={Container} id='contact'>
     <Details>
-      <ContactForm />
-    </Details>
-    <Thumbnail>
       <h2>Feel like getting in touch?</h2>
-      <h3> Let's have a chat. </h3>
-    </Thumbnail>
+      <br></br>
+      <br></br>
+
+      <a
+        href='https://calendar.app.google/cereNUHfGgdatwXRA'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <Button as='span'>Let's have a chat.</Button>
+      </a>
+    </Details>
   </Wrapper>
 );
