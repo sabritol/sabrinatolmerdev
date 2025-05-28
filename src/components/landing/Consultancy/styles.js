@@ -4,6 +4,13 @@ export const Wrapper = styled.div`
   h2 {
     text-align: center;
     margin-bottom: 0;
+    font-size: 26pt;
+    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#679cc7")};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
+    }
   }
 `;
 
@@ -34,20 +41,6 @@ export const TextWrapper = styled.div`
     4.8px 3px 0 #000, 3px 4.8px 0 #000, 8px 8px 0 #dbbb83, 9px 9px #000,
     7px 7px #000, 7px 9px #000, 9px 7px #000, 12px 12px #ece99c, 13px 13px #000,
     11px 11px #000, 13px 11px #000, 11px 13px #000;
-
-  h2 {
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-top: 50px;
-    left: 7rem;
-    font-size: 26pt;
-    color: ${({ theme }) => (theme === "dark" ? "red" : "#212121")};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-        theme === "light" ? "unset" : "difference"};
-    }
-  }
 `;
 
 export const Paragraph = styled.p`

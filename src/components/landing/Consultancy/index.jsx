@@ -11,6 +11,7 @@ export const Consultancy = () => {
   };
   return (
     <Wrapper id='consultancy'>
+      <h2>CONSULTANCY</h2>
       <ConsultancyWrapper as={Container}>
         <TextWrapper theme={theme}>
           <Paragraph theme={theme}>
