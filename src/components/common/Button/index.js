@@ -14,7 +14,7 @@ export const Button = styled.button`
     outline: none;
     text-decoration: none;
   } */
-  background: red;
+
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
     transform 0.2s cubic-bezier(0.4, 0, 1, 1);
   :hover {
@@ -33,7 +33,7 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: white;
-  background: #eea3b7;
+  background: #679cc7;
   /* &:focus {
     outline: none;
   } */
